@@ -1,0 +1,192 @@
+<section class="signup-shell">
+  <div class="signup-visual" aria-label="Fresh ingredients on a table">
+    <a class="brand" routerLink="/admin/users/new" aria-label="Bilionn team accounts"
+      ><span class="brand-mark">b</span> bilionn</a
+    >
+    <div class="visual-copy">
+      <span class="eyebrow"><span class="eyebrow-dot"></span> BILIONN TEAM</span>
+      <h1>Good service<br />starts with<br /><em>good people.</em></h1>
+      <p>Create secure staff accounts for the people helping your store run every day.</p>
+    </div>
+  </div>
+
+  <main class="signup-panel">
+    <div class="mobile-brand"><span class="brand-mark">b</span> bilionn</div>
+    <div class="form-wrap">
+      <div class="form-heading">
+        <span class="eyebrow form-eyebrow">ADMIN · TEAM ACCESS</span>
+        <h2>Add a cashier<span>.</span></h2>
+        <p>Create a cashier account for your retail store.</p>
+      </div>
+
+      @if (successMessage()) {
+        <div class="notice success" role="status">
+          <span class="notice-icon">✓</span>{{ successMessage() }}
+        </div>
+      }
+      @if (errorMessage()) {
+        <div class="notice error" role="alert">
+          <span class="notice-icon">!</span
+          ><span
+            >{{ errorMessage() }}
+            @if (adminLoginRequired()) {
+              <a routerLink="/login">Sign in</a> and try again.
+            }
+          </span>
+        </div>
+      }
+
+      <form (submit)="onSubmit($event)" novalidate>
+        <app-personal-section [form]="signupForm.personal" />
+        <app-address-section [form]="signupForm.address" />
+        <app-employment-section [form]="signupForm.employment" />
+        <app-identity-section [form]="signupForm.identity" />
+        <app-bank-section [form]="signupForm.bank" />
+        <app-emergency-section [form]="signupForm.emergency" />
+        <app-account-section [form]="signupForm.account" />
+
+        <p class="terms">
+          By creating an account, you agree to our <a href="#terms">Terms</a> and
+          <a href="#privacy">Privacy Policy</a>.
+        </p>
+        <button class="submit-button" type="submit" [disabled]="loading()">
+          <span>{{ loading() ? 'Creating cashier account…' : 'Create cashier account' }}</span
+          ><span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+      </form>
+
+      <p class="signin-prompt">New accounts are created by an administrator.</p>
+      <div class="secure-note">
+        <span aria-hidden="true">✳</span> This form requires an administrator login.
+      </div>
+    </div>
+  </main>
+</section>
+
+
+
+
+
+
+<!-- Old template for single signup form -->
+
+<!-- <section class="signup-shell">
+  <div class="signup-visual" aria-label="Fresh ingredients on a table">
+    <a class="brand" routerLink="/admin/users/new" aria-label="Bilionn team accounts"
+      ><span class="brand-mark">b</span> bilionn</a
+    >
+    <div class="visual-copy">
+      <span class="eyebrow"><span class="eyebrow-dot"></span> BILIONN TEAM</span>
+      <h1>Good service<br />starts with<br /><em>good people.</em></h1>
+      <p>Create secure staff accounts for the people helping your store run every day.</p>
+    </div>
+  </div>
+
+  <main class="signup-panel">
+    <div class="mobile-brand"><span class="brand-mark">b</span> bilionn</div>
+    <div class="form-wrap">
+      <div class="form-heading">
+        <span class="eyebrow form-eyebrow">ADMIN · TEAM ACCESS</span>
+        <h2>Add a cashier<span>.</span></h2>
+        <p>Create a cashier account for your retail store.</p>
+      </div>
+
+      @if (successMessage()) {
+        <div class="notice success" role="status">
+          <span class="notice-icon">✓</span>{{ successMessage() }}
+        </div>
+      }
+      @if (errorMessage()) {
+        <div class="notice error" role="alert">
+          <span class="notice-icon">!</span
+          ><span
+            >{{ errorMessage() }}
+            @if (adminLoginRequired()) {
+              <a routerLink="/login">Sign in</a> and try again.
+            }
+          </span>
+        </div>
+      }
+
+      <form (submit)="submit($event)" novalidate>
+        <!-- NAME FIELD -->
+        <!-- <mat-form-field appearance="outline">
+          <mat-label>Full name</mat-label>
+          <input
+            matInput
+            type="text"
+            [formField]="signupForm.name"
+            placeholder="e.g. Jamie Morgan"
+            autocomplete="name"
+          />
+          @if (signupForm.name().invalid()) {
+            <mat-error>{{ signupForm.name().errors()[0].message }}</mat-error>
+          }
+        </mat-form-field> -->
+
+        <!-- EMAIL FIELD -->
+        <!-- <mat-form-field appearance="outline">
+          <mat-label>Email address</mat-label>
+          <input
+            matInput
+            type="email"
+            [formField]="signupForm.email"
+            placeholder="you@example.com"
+            autocomplete="email"
+          />
+          @if (signupForm.email().invalid()) {
+            <mat-error>{{ signupForm.email().errors()[0].message }}</mat-error>
+          }
+        </mat-form-field> -->
+        <!-- @if (email.touched && email.invalid) { <small class="field-error">Enter a valid email address.</small> } -->
+
+
+        <!-- PASSWORDS ROW -->
+        <!-- <div class="password-row">
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input
+              matInput
+              type="password"
+              [formField]="signupForm.password"
+              placeholder="At least 8 characters"
+              autocomplete="new-password"
+            />
+            @if (signupForm.password().invalid()) {
+              <mat-error>{{ signupForm.password().errors()[0].message }}</mat-error>
+            }
+          </mat-form-field> -->
+
+          <!-- <mat-form-field appearance="outline">
+            <mat-label>Confirm password</mat-label>
+            <input
+              matInput
+              type="password"
+              [formField]="signupForm.confirmPassword"
+              placeholder="Re-enter password"
+              autocomplete="new-password"
+            /> -->
+            <!-- @if (signupForm.confirmPassword().invalid()) {
+              <mat-error>{{ signupForm.confirmPassword().errors()[0].message }}</mat-error>
+            }
+          </mat-form-field>
+        </div> -->
+
+        <!-- <p class="terms">
+          By creating an account, you agree to our <a href="#terms">Terms</a> and
+          <a href="#privacy">Privacy Policy</a>.
+        </p>
+        <button class="submit-button" type="submit" [disabled]="loading()">
+          <span>{{ loading() ? 'Creating cashier account…' : 'Create cashier account' }}</span
+          ><span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+      </form> -->
+
+      <!-- <p class="signin-prompt">New accounts are created by an administrator.</p>
+      <div class="secure-note">
+        <span aria-hidden="true">✳</span> This form requires an administrator login.
+      </div>
+    </div>
+  </main>
+</section> --> 
+

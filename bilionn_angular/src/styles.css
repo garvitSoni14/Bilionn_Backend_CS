@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; }
+html, body { min-width: 320px; min-height: 100%; margin: 0; }
+body { font-family: 'DM Sans', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; -webkit-font-smoothing: antialiased; }
+button, input { font: inherit; }
+
+
+mat-form-field {
+  width: 100%;
+
+  /* Size (hamare 47px box jaisa) */
+  --mat-form-field-container-height: 47px;
+  --mat-form-field-container-vertical-padding: 13px;
+  --mat-form-field-container-text-size: 13px;
+  --mat-form-field-container-text-line-height: 20px;
+
+  /* Border thicknesss */
+  --mat-form-field-outlined-outline-width: 1px;
+  --mat-form-field-outlined-focus-outline-width: 2px;
+
+  /* Border ke rang: normal, hover, focus */
+  --mat-form-field-outlined-outline-color: #e5e6de;
+  --mat-form-field-outlined-hover-outline-color: #cfd1c3;
+  --mat-form-field-outlined-focus-outline-color: #9faa48;
+
+  /* Error colors */
+  --mat-form-field-outlined-error-outline-color: #cf7667;
+  --mat-form-field-outlined-error-hover-outline-color: #cf7667;
+  --mat-form-field-outlined-error-focus-outline-color: #cf7667;
+  --mat-form-field-error-text-color: #b84f43;
+
+  /* Label, text, placeholder, cursor */
+  --mat-form-field-outlined-label-text-color: #85877e;
+  --mat-form-field-outlined-hover-label-text-color: #85877e;
+  --mat-form-field-outlined-focus-label-text-color: #69772e;
+  --mat-form-field-outlined-error-focus-label-text-color: #b84f43;
+  --mat-form-field-outlined-input-text-color: #252a23;
+  --mat-form-field-outlined-input-text-placeholder-color: #b3b4ad;
+  --mat-form-field-outlined-caret-color: #9faa48;
+
+  /* corner ka (radius): dono naam, jo lage wahi chalega */
+  --mat-form-field-outlined-container-shape: 8px;
+  --mdc-outlined-text-field-container-shape: 8px;
+}

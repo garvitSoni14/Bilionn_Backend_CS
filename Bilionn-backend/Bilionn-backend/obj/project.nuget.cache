@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Sfd/YpfwUg=",
+  "dgSpecHash": "IduNdaCLUB0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilionn-backend\\Bilionn-backend\\Bilionn-backend.csproj",
+  "projectFilePath": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Bilionn-backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\fluentvalidation\\12.2.0\\fluentvalidation.12.2.0.nupkg.sha512",
@@ -37,6 +37,7 @@
     "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
     "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512",
+    "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\scalar.aspnetcore\\2.18.2\\scalar.aspnetcore.2.18.2.nupkg.sha512",
     "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",
     "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\system.composition.attributedmodel\\7.0.0\\system.composition.attributedmodel.7.0.0.nupkg.sha512",

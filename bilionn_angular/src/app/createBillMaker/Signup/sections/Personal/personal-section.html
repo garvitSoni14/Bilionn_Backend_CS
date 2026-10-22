@@ -1,0 +1,58 @@
+<h3 class="section-title">Personal details</h3>
+
+<div class="field-grid">
+  <mat-form-field appearance="outline">
+    <mat-label>Employee code</mat-label>
+    <input matInput type="text" [formField]="form().employeeCode" placeholder="EMP-001" />
+    <!-- @if (form().employeeCode().invalid() && form().employeeCode().touched()) {
+          <mat-error>{{ form().employeeCode().errors()[0].message }}</mat-error>
+        } -->
+
+        <!-- Reusing this same validation message component.. -->
+    <app-validation-message [receivedField]="form().employeeCode"> </app-validation-message>
+
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Full name</mat-label>
+    <input
+      matInput
+      type="text"
+      [formField]="form().fullName"
+      placeholder="e.g. Jamie Morgan"
+      autocomplete="name"
+    />
+    <!-- @if (form().fullName().invalid() && form().fullName().touched()) {
+      <mat-error>{{ form().fullName().errors()[0].message }}</mat-error>
+    } -->
+          <app-validation-message [receivedField]="form().fullName"> </app-validation-message>
+
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" floatLabel="always">
+    <mat-label>Date of birth</mat-label>
+    <input matInput type="date" [formField]="form().dateOfBirth" />
+    <!-- @if (form().dateOfBirth().invalid() && form().dateOfBirth().touched()) {
+      <mat-error>{{ form().dateOfBirth().errors()[0].message }}</mat-error>
+    } -->
+          <app-validation-message [receivedField]="form().dateOfBirth"> </app-validation-message>
+
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Mobile number</mat-label>
+    <input
+      matInput
+      type="tel"
+      inputmode="numeric"
+      [formField]="form().mobileNumber"
+      placeholder="9876543210"
+      autocomplete="tel"
+    />
+    <!-- @if (form().mobileNumber().invalid() && form().mobileNumber().touched()) {
+      <mat-error>{{ form().mobileNumber().errors()[0].message }}</mat-error>
+    } -->
+          <app-validation-message [receivedField]="form().mobileNumber"> </app-validation-message>
+
+  </mat-form-field>
+</div>

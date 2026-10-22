@@ -14,7 +14,7 @@ public record CreateCashierRequest(
     BankDetailsDto BankDetails, EmergencyContactDto EmergencyContact,
     string Email, string Password);
 
-// Every field optional: null means "leave unchanged".
+// Every field optional: null means "leave unchanged". QQQQUUUEEEERRRRYYYY ????????
 public record UpdateCashierRequest(
     string? FullName, DateOnly? DateOfBirth, string? MobileNumber, AddressDto? Address,
     DateOnly? JoiningDate, decimal? Salary, string? PanNumber, string? AadhaarNumber,

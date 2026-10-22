@@ -30,7 +30,7 @@ public class EmployeeRepository : IEmployeeRepository
 
     public async Task AddAsync(Employee employee)
     {
-        appDbContext.Employees.Add(employee);   // also adds the new UserAccount attached to it
+        appDbContext.Employees.Add(employee);   
         await appDbContext.SaveChangesAsync();
     }
 

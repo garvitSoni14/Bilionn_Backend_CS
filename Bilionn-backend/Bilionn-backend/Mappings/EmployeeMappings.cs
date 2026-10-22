@@ -2,8 +2,6 @@
 
 using Bilionn_backend.DTOs.Cashiers;
 using Bilionn_backend.Models;
-using global::Bilionn_backend.DTOs.Cashiers;
-using global::Bilionn_backend.Models;
 
 public static class EmployeeMappings
 {

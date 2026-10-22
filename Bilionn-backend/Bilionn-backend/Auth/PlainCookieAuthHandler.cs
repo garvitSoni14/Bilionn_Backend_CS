@@ -2,7 +2,7 @@
 
 using System.Security.Claims;
 using System.Text.Encodings.Web;
-using System.Text.Json;
+//using System.Text.Json;
 using Bilionn_backend.Models;
 using Bilionn_backend.Repositories;
 using Microsoft.AspNetCore.Authentication;
@@ -31,21 +31,30 @@ public class PlainCookieAuthHandler : AuthenticationHandler<AuthenticationScheme
         if (!Request.Cookies.TryGetValue(CookieName, out var raw) || string.IsNullOrWhiteSpace(raw))
             return AuthenticateResult.NoResult();
 
-        // 2. read only the email from the cookie JSON
-        string? email;
-        try
-        {
-            using var doc = JsonDocument.Parse(raw);
-            email = doc.RootElement.GetProperty("email").GetString();
-        }
-        catch
-        {
-            return AuthenticateResult.Fail("Malformed cookie.");
-        }
+        //// 2. read only the email from the cookie JSON
+        //string? email;
+        //try
+        //{
+        //    using var doc = JsonDocument.Parse(raw);
+        //    email = doc.RootElement.GetProperty("email").GetString();
+        //}
+        //catch
+        //{
+        //    return AuthenticateResult.Fail("Malformed cookie.");
+        //}
+        //if (string.IsNullOrWhiteSpace(email))
+        //    return AuthenticateResult.Fail("No email in cookie.");
+
+        var email = raw.Split('|')
+        .Select(part => part.Split('=', 2))
+        .Where(kv => kv.Length == 2 && kv[0] == "email")
+        .Select(kv => kv[1])
+        .FirstOrDefault();
+
         if (string.IsNullOrWhiteSpace(email))
             return AuthenticateResult.Fail("No email in cookie.");
 
-        // 3. load the user from the DB
+        // 3. load the user from the DB    ---IMPORTANT STEP---
         var user = await _users.GetByEmailAsync(email.Trim().ToLowerInvariant());
         if (user is null || user.AccountStatus != AccountStatus.ACTIVE)
             return AuthenticateResult.Fail("User not found or not active.");

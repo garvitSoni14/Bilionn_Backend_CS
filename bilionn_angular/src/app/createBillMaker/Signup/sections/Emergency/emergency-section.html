@@ -1,0 +1,33 @@
+<h3 class="section-title">Emergency contact</h3>
+
+    <div class="field-grid">
+      <mat-form-field appearance="outline">
+        <mat-label>Contact name</mat-label>
+        <input matInput type="text" [formField]="form().name" />
+        <!-- @if (form().name().invalid() && form().name().touched()) {
+          <mat-error>{{ form().name().errors()[0].message }}</mat-error>
+        } -->
+              <app-validation-message [receivedField]="form().name"> </app-validation-message>
+
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Relationship</mat-label>
+        <input matInput type="text" [formField]="form().relationship" placeholder="e.g. Sibling" />
+        <!-- @if (form().relationship().invalid() && form().relationship().touched()) {
+          <mat-error>{{ form().relationship().errors()[0].message }}</mat-error>
+        } -->
+              <app-validation-message [receivedField]="form().relationship"> </app-validation-message>
+
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Contact mobile number</mat-label>
+      <input matInput type="tel" inputmode="numeric" [formField]="form().mobileNumber" placeholder="9876501234" />
+      <!-- @if (form().mobileNumber().invalid() && form().mobileNumber().touched()) {
+        <mat-error>{{ form().mobileNumber().errors()[0].message }}</mat-error>
+      } -->
+            <app-validation-message [receivedField]="form().mobileNumber"> </app-validation-message>
+
+    </mat-form-field>

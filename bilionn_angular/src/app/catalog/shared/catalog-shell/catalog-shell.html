@@ -1,0 +1,24 @@
+<div class="dashboard-layout">
+  <aside class="sidebar">
+    <a class="brand" routerLink="/dashboard" aria-label="Bilionn dashboard"><span class="brand-mark">b</span><span>bilionn</span></a>
+    <div class="store-switcher"><span class="store-avatar">B</span><span class="store-copy"><strong>Bilionn Market</strong><small>Retail workspace</small></span><span class="switcher-dots">•••</span></div>
+    <div class="nav-caption">WORKSPACE</div>
+    <nav class="side-nav" aria-label="Main navigation">
+      <a class="nav-link" routerLink="/dashboard" routerLinkActive="active"><span class="nav-icon">◫</span>Overview<span class="nav-indicator"></span></a>
+      @if (isAdmin()) {
+        <a class="nav-link" routerLink="/admin/categories" routerLinkActive="active"><span class="nav-icon">▦</span>Categories<span class="nav-indicator"></span></a>
+        <a class="nav-link" routerLink="/admin/items" routerLinkActive="active"><span class="nav-icon">▤</span>Items<span class="nav-indicator"></span></a>
+        <a class="nav-link" routerLink="/admin/users/new" routerLinkActive="active"><span class="nav-icon">♙</span>Team accounts<span class="nav-arrow">↗</span></a>
+      }
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><span class="help-spark">✳</span><strong>Need a hand?</strong><p>Organise categories first, then add the items that live in them.</p></div>
+      <button class="signout-link" type="button" (click)="signOut()"><span class="nav-icon">↪</span>Sign out</button>
+      <div class="sidebar-user"><span class="user-avatar">{{ (auth.currentUser()?.name  || 'S').charAt(0).toUpperCase() }}</span><span class="user-copy"><strong>{{ auth.currentUser()?.name  || 'Store team' }}</strong><small>{{ isAdmin() ? 'Administrator' : 'Bill maker' }}</small></span><span class="user-menu">•••</span></div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <ng-content />
+  </main>
+</div>

@@ -1,0 +1,87 @@
+<div class="dashboard-layout">
+  <aside class="sidebar">
+    <a class="brand" routerLink="/dashboard" aria-label="Bilionn dashboard"><span class="brand-mark">b</span><span>bilionn</span></a>
+    <div class="store-switcher"><span class="store-avatar">B</span><span class="store-copy"><strong>Bilionn Market</strong><small>Retail workspace</small></span><span class="switcher-dots">•••</span></div>
+    <div class="nav-caption">WORKSPACE</div>
+    <nav class="side-nav" aria-label="Main navigation">
+  <a class="nav-link active" routerLink="/dashboard"><span class="nav-icon">◫</span>Overview<span class="nav-indicator"></span></a>
+  @if (isAdmin()) {
+    <a class="nav-link" routerLink="/admin/categories"><span class="nav-icon">▦</span>Categories<span class="nav-arrow">↗</span></a>
+    <a class="nav-link" routerLink="/admin/items"><span class="nav-icon">▤</span>Items<span class="nav-arrow">↗</span></a>
+    <a class="nav-link" routerLink="/admin/users/new"><span class="nav-icon">♙</span>Team accounts<span class="nav-arrow">↗</span></a>
+  }
+</nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><span class="help-spark">✳</span><strong>Need a hand?</strong><p>Your store overview is always just a click away.</p></div>
+      <button class="signout-link" type="button" (click)="signOut()"><span class="nav-icon">↪</span>Sign out</button>
+      <div class="sidebar-user"><span class="user-avatar">{{ (auth.currentUser()?.name  || 'S').charAt(0).toUpperCase() }}</span><span class="user-copy"><strong>{{ auth.currentUser()?.name  || 'Store team' }}</strong><small>{{ isAdmin() ? 'Administrator' : 'Bill maker' }}</small></span><span class="user-menu">•••</span></div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="page-header">
+      <div><div class="breadcrumb">Workspace <span>/</span> <strong>Overview</strong></div><h1>Good day<span>.</span></h1><p class="date-line">Here’s what’s happening in your store · {{ todayLabel }}</p></div>
+      <div class="header-actions">
+        @if (isAdmin()) { <a class="team-button" routerLink="/admin/users/new"><span>＋</span> Add bill maker</a> }
+        <button class="refresh-button" type="button" aria-label="Refresh dashboard" (click)="loadDashboard()" [disabled]="loading()"><span [class.spinning]="loading()">↻</span></button>
+      </div>
+    </header>
+
+    @if (loading()) {
+      <section class="state-card loading-state"><span class="loader"></span><strong>Preparing your store overview</strong><p>Fetching today’s numbers and recent activity…</p></section>
+    } @else if (errorMessage()) {
+      <section class="state-card error-state"><span class="state-icon">!</span><strong>We couldn’t load the dashboard</strong><p>{{ errorMessage() }}</p><div class="state-actions"><button type="button" class="retry-button" (click)="loadDashboard()">Try again</button><a routerLink="/login">Sign in again</a></div></section>
+    } @else if (summary(); as data) {
+      <section class="metric-grid" aria-label="Today's performance">
+        <article class="metric-card primary-metric"><div class="metric-top"><span class="metric-label">TODAY’S SALES</span><span class="metric-icon rupee">₹</span></div><strong class="metric-value">{{ currency(data.todaySales) }}</strong><div class="metric-foot"><span class="metric-foot-icon">↗</span> Sales recorded today</div><span class="metric-orbit orbit-one"></span><span class="metric-orbit orbit-two"></span></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-label">TODAY’S ORDERS</span><span class="metric-icon basket">▤</span></div><strong class="metric-value">{{ data.todayOrderCount }}</strong><div class="metric-foot"><span class="metric-foot-icon">◷</span> Orders placed today</div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-label">AVG. ORDER VALUE</span><span class="metric-icon average">⌁</span></div><strong class="metric-value">{{ currency(averageOrder()) }}</strong><div class="metric-foot"><span class="metric-foot-icon">⌖</span> Across loaded orders</div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-label">ALL-TIME SALES</span><span class="metric-icon total">◒</span></div><strong class="metric-value">{{ currency(totalSales()) }}</strong><div class="metric-foot"><span class="metric-foot-icon">↗</span> From {{ orders().length }} orders</div></article>
+      </section>
+
+      <section class="analytics-grid" aria-label="Sales analysis">
+        <article class="panel trend-panel">
+          <div class="panel-heading"><div><span class="panel-kicker">THE LAST 7 DAYS</span><h2>Sales pulse</h2><p>Daily revenue from your latest orders</p></div><span class="panel-badge">₹ INR</span></div>
+          @if (orders().length) {
+            <div class="chart-area"><div class="chart-guides"><span>{{ currency(maxDailySales()) }}</span><span>{{ currency(maxDailySales() / 2) }}</span><span>₹0</span></div><div class="bar-chart">
+              @for (day of dailySales(); track day.dateKey) { <div class="bar-column"><span class="bar-tooltip">{{ currency(day.amount) }}</span><div class="bar-track"><div class="bar-fill" [style.height.%]="barHeight(day.amount, maxDailySales())"></div></div><span class="bar-day">{{ day.label }}</span></div> }
+            </div></div>
+          } @else { <div class="empty-chart"><span>⌁</span><p>Sales activity will appear here once an order is placed.</p></div> }
+        </article>
+
+        <article class="panel payment-panel">
+          <div class="panel-heading"><div><span class="panel-kicker">HOW CUSTOMERS PAY</span><h2>Payment mix</h2></div><span class="more-mark">•••</span></div>
+          @if (paymentBreakdown().length) {
+            <div class="payment-content"><div class="donut" [style.background]="paymentGradient()"><div class="donut-center"><strong>{{ orders().length }}</strong><span>orders</span></div></div><div class="payment-legend">
+              @for (method of paymentBreakdown(); track method.name; let i = $index) { <div class="legend-row"><span [class]="'legend-swatch swatch-' + i"></span><span class="legend-name">{{ method.name }}</span><strong>{{ method.percent }}%</strong></div> }
+            </div></div>
+          } @else { <div class="empty-compact">Payment methods appear after your first order.</div> }
+        </article>
+
+        <article class="panel products-panel">
+          <div class="panel-heading"><div><span class="panel-kicker">WHAT’S MOVING</span><h2>Top products</h2><p>Ranked by units sold</p></div><span class="panel-icon">✳</span></div>
+          @if (topProducts().length) { <div class="product-list">
+            @for (product of topProducts(); track product.name; let i = $index) { <div class="product-row"><span class="product-rank">0{{ i + 1 }}</span><div class="product-details"><div class="product-meta"><strong>{{ product.name }}</strong><span>{{ product.quantity }} sold</span></div><div class="product-track"><div [class]="'product-fill fill-' + i" [style.width.%]="productWidth(product.quantity)"></div></div></div></div> }
+          </div> } @else { <div class="empty-compact">Your best-selling items will show up here.</div> }
+        </article>
+
+        <article class="panel status-panel">
+          <div class="panel-heading"><div><span class="panel-kicker">PAYMENT PROGRESS</span><h2>Order status</h2></div><span class="status-live"><i></i> Live</span></div>
+          @if (statusBreakdown().length) { <div class="status-list">
+            @for (status of statusBreakdown(); track status.name) { <div class="status-row"><div class="status-meta"><span class="status-name"><i [class]="'status-dot ' + status.name.toLowerCase().replace(' ', '-')"></i>{{ status.name }}</span><strong>{{ status.count }}</strong></div><div class="status-track"><div [class]="'status-fill status-' + status.name.toLowerCase().replace(' ', '-')" [style.width.%]="status.percent"></div></div></div> }
+          </div> } @else { <div class="empty-compact">Order payment status will appear here.</div> }
+        </article>
+      </section>
+
+      <section class="panel orders-panel">
+        <div class="panel-heading orders-heading"><div><span class="panel-kicker">FRESH FROM THE COUNTER</span><h2>Recent orders</h2><p>Your latest five transactions</p></div><span class="orders-count">{{ data.recentOrders.length }} recent</span></div>
+        @if (data.recentOrders.length) {
+          <div class="table-wrap"><table><thead><tr><th>ORDER</th><th>CUSTOMER</th><th>PAYMENT</th><th>STATUS</th><th>TIME</th><th class="amount-head">TOTAL</th></tr></thead><tbody>
+            @for (order of data.recentOrders; track order.orderId) { <tr><td><span class="order-id">{{ shortOrderId(order.orderId) }}</span></td><td><div class="customer-cell"><span class="customer-avatar">{{ (order.customerName || 'G').charAt(0).toUpperCase() }}</span><strong>{{ order.customerName || 'Guest' }}</strong></div></td><td><span class="payment-pill">{{ label(order.paymentMethod || 'Other') }}</span></td><td><span class="order-status" [class]="'order-status ' + (order.paymentDetails?.status || 'unknown').toLowerCase()"><i></i>{{ label(order.paymentDetails?.status || 'Unknown') }}</span></td><td class="time-cell">{{ orderTime(order.createdAt) }}</td><td class="amount-cell">{{ currency(order.grandTotal) }}</td></tr> }
+          </tbody></table></div>
+        } @else { <div class="orders-empty"><span>▤</span><strong>No orders yet</strong><p>Your first transaction will show up here.</p></div> }
+      </section>
+      <footer class="page-footer"><span>© Bilionn · Built for the people behind the counter.</span><span>Everything in its right place <b>✳</b></span></footer>
+    }
+  </main>
+</div>

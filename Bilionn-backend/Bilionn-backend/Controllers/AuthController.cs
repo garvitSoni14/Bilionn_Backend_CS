@@ -7,6 +7,7 @@ using Bilionn_backend.DTOs.Auth;
 using Bilionn_backend.Services;
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bilionn_backend.Controllers;
@@ -19,7 +20,7 @@ public class AuthController : ControllerBase
     private readonly IValidator<BootstrapAdminRequest> bootstrapAdminRequest;
     private readonly IValidator<LoginRequest> loginValidator;
 
-    public AuthController(IAuthService auth, IValidator<BootstrapAdminRequest> adminRequest, IValidator<LoginRequest> loginVal)
+    public AuthController(IAuthService auth, IValidator<BootstrapAdminRequest> adminRequest, IValidator<LoginRequest> loginVal,SignInManager    )
     {
         authService = auth;
         bootstrapAdminRequest = adminRequest;
@@ -50,26 +51,54 @@ public class AuthController : ControllerBase
 
         var user = await authService.LoginAsync(request);
 
-        var json = JsonSerializer.Serialize(new
+        // 1. claims
+
+        var claims = new List<Claim>
         {
-            userId = user.UserId,
-            name = user.Name,
-            email = user.Email,
-            role = user.Role
-        });
+            new(ClaimTypes.NameIdentifier, user.UserId),
+            new(ClaimTypes.Name,           user.Name),
+            new(ClaimTypes.Email,          user.Email),
+            new(ClaimTypes.Role,           user.Role)
+        };
+
+        // 2. claims -> raw text:  userId=...|name=...|email=...|role=...
+        var value = string.Join("|",
+            $"userId={Clean(user.UserId)}",
+            $"name={Clean(user.Name)}",
+            $"email={Clean(user.Email)}",
+            $"role={Clean(user.Role)}");
+
+        // 3. write the Set-Cookie header ourselves (Response.Cookies.Append would URL-encode it)
+        var cookie = $"{PlainCookieAuthHandler.CookieName}={value}; Path=/; SameSite=Lax" +
+                     $"; Expires={DateTimeOffset.UtcNow.AddMinutes(60):R}" +
+                     (Request.IsHttps ? "; Secure" : "");
+        Response.Headers.Append("Set-Cookie", cookie);
+
+        //var json = JsonSerializer.Serialize(new
+        //{
+        //    userId = user.UserId,
+        //    name = user.Name,
+        //    email = user.Email,
+        //    role = user.Role
+        //});
 
         // ASP.NET URL-encodes the value for us; don't escape it yourself
-        Response.Cookies.Append(PlainCookieAuthHandler.CookieName, json, new CookieOptions
-        {
-            HttpOnly = false,                 // readable in the browser
-            Secure = Request.IsHttps,
-            SameSite = SameSiteMode.Lax,
-            Path = "/",
-            Expires = DateTimeOffset.UtcNow.AddMinutes(60)
-        });
+        
+        //Response.Cookies.Append(PlainCookieAuthHandler.CookieName, json, new CookieOptions
+        //{
+        //    HttpOnly = false,                 // readable in the browser
+        //    Secure = Request.IsHttps,
+        //    SameSite = SameSiteMode.Lax,
+        //    Path = "/",
+        //    Expires = DateTimeOffset.UtcNow.AddMinutes(60)
+        //});
 
         return Ok(user);
     }
+
+    // keeps characters that would break a cookie (or our | separator) out of the value
+    private static string Clean(string? s) =>
+        (s ?? "").Replace("|", " ").Replace(";", " ").Replace(",", " ").Trim();
 
     [Authorize]
     [HttpPost("logout")]

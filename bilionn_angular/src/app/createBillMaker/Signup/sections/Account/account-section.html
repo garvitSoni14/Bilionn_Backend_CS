@@ -1,0 +1,41 @@
+<h3 class="section-title">Account</h3>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Email address</mat-label>
+      <input matInput type="email" [formField]="form().email" placeholder="you@example.com" autocomplete="email" />
+      
+      <!-- Old way -->
+      <!-- @if (form().fullName().invalid()) {
+      <mat-error>{{ form().fullName().errors()[0].message }}</mat-error>
+      } -->
+      <!-- New way -->
+      <!-- @if (form().email().invalid() && form().email().touched()) {
+        <mat-error>{{ form().email().errors()[0].message }}</mat-error>
+      } -->
+
+          <app-validation-message [receivedField]="form().email"> </app-validation-message>
+
+    </mat-form-field>
+
+    <div class="field-grid">
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" [formField]="form().password" autocomplete="new-password" />
+        <!-- @if (form().password().invalid() && form().password().touched()) {
+          <mat-error>{{ form().password().errors()[0].message }}</mat-error>
+        } -->
+
+            <app-validation-message [receivedField]="form().password"> </app-validation-message>
+
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Confirm password</mat-label>
+        <input matInput type="password" [formField]="form().confirmPassword" autocomplete="new-password" />
+        <!-- @if (form().confirmPassword().invalid() && form().confirmPassword().touched()) {
+          <mat-error>{{ form().confirmPassword().errors()[0].message }}</mat-error>
+        } -->
+              <app-validation-message [receivedField]="form().confirmPassword"> </app-validation-message>
+
+      </mat-form-field>
+    </div>

@@ -1,0 +1,16 @@
+
+# Visual Studio generated files
+.vs/
+**/.vs/
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# IDE files
+.idea/
+.vscode/

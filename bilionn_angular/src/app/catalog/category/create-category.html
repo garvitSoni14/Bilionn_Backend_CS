@@ -1,0 +1,106 @@
+<app-catalog-shell>
+  <header class="page-header">
+    <div>
+      <div class="breadcrumb">Workspace <span>/</span> <strong>Categories</strong></div>
+      <h1>Add a category<span>.</span></h1>
+      <p class="date-line">Group your items so billing stays quick · {{ todayLabel }}</p>
+    </div>
+    <div class="header-actions">
+      <a class="team-button" routerLink="/admin/items"><span>＋</span> Add item</a>
+      <button class="refresh-button" type="button" aria-label="Refresh categories" (click)="loadCategories()" [disabled]="listLoading()"><span [class.spinning]="listLoading()">↻</span></button>
+    </div>
+  </header>
+
+  <div class="catalog-grid">
+    <!-- ================= FORM ================= -->
+    <section class="panel">
+      <div class="panel-heading">
+        <div><span class="panel-kicker">NEW CATEGORY</span><h2>Category details</h2><p>Name, colour and an optional picture.</p></div>
+      </div>
+
+      @if (successMessage()) {
+        <div class="notice success" role="status"><span class="notice-icon">✓</span>{{ successMessage() }}</div>
+      }
+      @if (errorMessage()) {
+        <div class="notice error" role="alert">
+          <span class="notice-icon">!</span>
+          <span>{{ errorMessage() }} @if (adminLoginRequired()) { <a routerLink="/login">Sign in</a> and try again. }</span>
+        </div>
+      }
+
+      <form (submit)="onSubmit($event)" novalidate>
+        <mat-form-field appearance="outline">
+          <mat-label>Category name</mat-label>
+          <input matInput type="text" [formField]="categoryForm.name" placeholder="e.g. LED TV" />
+          <app-validation-message [receivedField]="categoryForm.name" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Description (optional)</mat-label>
+          <textarea matInput rows="3" [formField]="categoryForm.description" placeholder="What goes in this category?"></textarea>
+          <app-validation-message [receivedField]="categoryForm.description" />
+        </mat-form-field>
+
+        <div class="color-block">
+          <span class="field-label">Background colour</span>
+          <div class="color-row">
+            <input class="color-input" type="color" [formField]="categoryForm.bgColor" aria-label="Pick a colour" />
+            <span class="color-hex">{{ categoryForm.bgColor().value() }}</span>
+            <div class="swatches">
+              @for (color of presetColors; track color) {
+                <button type="button" class="swatch" [style.background]="color" [class.selected]="categoryForm.bgColor().value() === color" [attr.aria-label]="'Use ' + color" (click)="pickColor(color)"></button>
+              }
+            </div>
+          </div>
+          <app-validation-message [receivedField]="categoryForm.bgColor" />
+        </div>
+
+        <div class="preview-tile" [style.background]="categoryForm.bgColor().value()">
+          <span class="tile-letter">{{ (categoryForm.name().value() || 'C').charAt(0).toUpperCase() }}</span>
+          <span><strong>{{ categoryForm.name().value() || 'Category preview' }}</strong><small>{{ categoryForm.description().value() || 'This is how the tile will feel on the billing screen.' }}</small></span>
+        </div>
+
+        <app-image-picker label="Category image (optional)" [(file)]="image" />
+
+        <button class="submit-button" type="submit" [disabled]="submitting()">
+          <span>{{ submitting() ? 'Creating category…' : 'Create category' }}</span>
+          <span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+      </form>
+    </section>
+
+    <!-- ================= LIST ================= -->
+    <section class="panel">
+      <div class="panel-heading">
+        <div><span class="panel-kicker">YOUR CATALOG</span><h2>Existing categories</h2><p>Newest changes show up here instantly.</p></div>
+        <span class="count-pill">{{ categories().length }} total</span>
+      </div>
+
+      @if (listLoading()) {
+        <div class="empty-compact"><span class="loader"></span><p>Loading categories…</p></div>
+      } @else if (listError()) {
+        <div class="notice error" role="alert"><span class="notice-icon">!</span>{{ listError() }}</div>
+      } @else if (categories().length) {
+        <div class="list">
+          @for (category of categories(); track category.categoryId) {
+            <div class="list-row">
+              <span class="thumb" [style.background]="category.bgColor">
+                {{ category.name.charAt(0).toUpperCase() }}
+                <img [src]="imageSrc(category.imgUrl)" [alt]="category.name" (error)="hideBrokenImage($event)" />
+              </span>
+              <span class="row-copy"><strong>{{ category.name }}</strong><small>{{ category.description || 'No description' }}</small></span>
+              <span class="row-meta">
+                <span class="pill">{{ category.items }} {{ category.items === 1 ? 'item' : 'items' }}</span>
+                <button type="button" class="delete-button" [disabled]="deletingId() === category.categoryId" (click)="remove(category)">{{ deletingId() === category.categoryId ? 'Deleting…' : 'Delete' }}</button>
+              </span>
+            </div>
+          }
+        </div>
+      } @else {
+        <div class="empty-compact"><span>▦</span><p>No categories yet. Your first one will appear here.</p></div>
+      }
+    </section>
+  </div>
+
+  <footer class="page-footer"><span>© Bilionn · Built for the people behind the counter.</span><span>Everything in its right place <b>✳</b></span></footer>
+</app-catalog-shell>

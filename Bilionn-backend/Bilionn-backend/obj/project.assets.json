@@ -705,6 +705,22 @@
           }
         }
       },
+      "Scalar.AspNetCore/2.18.2": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Scalar.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.CodeDom/6.0.0": {
         "type": "package",
         "compile": {
@@ -2335,6 +2351,25 @@
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
+    "Scalar.AspNetCore/2.18.2": {
+      "sha512": "/Ss5o3t+k+Ea5yRMxd5avukRCRB74YdWNZ+y7RNTjFtWqP10VNhl+ynQYyATC+vr65qB6sFcneQ4q2kExbc2+w==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.18.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net10.0/Scalar.AspNetCore.dll",
+        "lib/net10.0/Scalar.AspNetCore.xml",
+        "lib/net8.0/Scalar.AspNetCore.dll",
+        "lib/net8.0/Scalar.AspNetCore.xml",
+        "lib/net9.0/Scalar.AspNetCore.dll",
+        "lib/net9.0/Scalar.AspNetCore.xml",
+        "scalar.aspnetcore.2.18.2.nupkg.sha512",
+        "scalar.aspnetcore.nuspec"
+      ]
+    },
     "System.CodeDom/6.0.0": {
       "sha512": "CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
       "type": "package",
@@ -2554,7 +2589,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
       "Microsoft.IdentityModel.JsonWebTokens >= 8.23.0",
       "Microsoft.IdentityModel.Tokens >= 8.23.0",
-      "Pomelo.EntityFrameworkCore.MySql >= 9.0.0"
+      "Pomelo.EntityFrameworkCore.MySql >= 9.0.0",
+      "Scalar.AspNetCore >= 2.18.2"
     ]
   },
   "packageFolders": {
@@ -2564,11 +2600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilionn-backend\\Bilionn-backend\\Bilionn-backend.csproj",
+      "projectUniqueName": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Bilionn-backend.csproj",
       "projectName": "Bilionn-backend",
-      "projectPath": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilionn-backend\\Bilionn-backend\\Bilionn-backend.csproj",
+      "projectPath": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Bilionn-backend.csproj",
       "packagesPath": "C:\\Users\\LAPTOP WORLD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilionn-backend\\Bilionn-backend\\obj\\",
+      "outputPath": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2656,6 +2692,10 @@
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",
             "version": "[9.0.0, )"
+          },
+          "Scalar.AspNetCore": {
+            "target": "Package",
+            "version": "[2.18.2, )"
           }
         },
         "imports": [

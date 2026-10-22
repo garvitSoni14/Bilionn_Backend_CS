@@ -1,0 +1,114 @@
+<app-catalog-shell>
+  <header class="page-header">
+    <div>
+      <div class="breadcrumb">Workspace <span>/</span> <strong>Items</strong></div>
+      <h1>Add an item<span>.</span></h1>
+      <p class="date-line">Put something new on your shelves · {{ todayLabel }}</p>
+    </div>
+    <div class="header-actions">
+      <a class="team-button" routerLink="/admin/categories"><span>＋</span> Add category</a>
+      <button class="refresh-button" type="button" aria-label="Refresh items" (click)="loadItems()" [disabled]="listLoading()"><span [class.spinning]="listLoading()">↻</span></button>
+    </div>
+  </header>
+
+  <div class="catalog-grid">
+    <!-- ================= FORM ================= -->
+    <section class="panel">
+      <div class="panel-heading">
+        <div><span class="panel-kicker">NEW ITEM</span><h2>Item details</h2><p>Name, price, category and an optional picture.</p></div>
+      </div>
+
+      @if (noCategories()) {
+        <div class="notice info" role="status">
+          <span class="notice-icon">i</span>
+          <span>You need at least one category before adding items. <a routerLink="/admin/categories">Create a category</a>.</span>
+        </div>
+      }
+      @if (successMessage()) {
+        <div class="notice success" role="status"><span class="notice-icon">✓</span>{{ successMessage() }}</div>
+      }
+      @if (errorMessage()) {
+        <div class="notice error" role="alert">
+          <span class="notice-icon">!</span>
+          <span>{{ errorMessage() }} @if (adminLoginRequired()) { <a routerLink="/login">Sign in</a> and try again. }</span>
+        </div>
+      }
+
+      <form (submit)="onSubmit($event)" novalidate>
+        <mat-form-field appearance="outline">
+          <mat-label>Item name</mat-label>
+          <input matInput type="text" [formField]="itemForm.name" placeholder="e.g. Basmati rice 1 kg" />
+          <app-validation-message [receivedField]="itemForm.name" />
+        </mat-form-field>
+
+        <div class="field-grid">
+          <mat-form-field appearance="outline">
+            <mat-label>Price</mat-label>
+            <span matTextPrefix>₹&nbsp;</span>
+            <input matInput type="text" inputmode="decimal" [formField]="itemForm.price" placeholder="120.00" />
+            <app-validation-message [receivedField]="itemForm.price" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Category</mat-label>
+            <select matNativeControl [formField]="itemForm.categoryId">
+              <option value="" disabled>Select a category</option>
+              @for (category of categories(); track category.categoryId) {
+                <option [value]="category.categoryId">{{ category.name }}</option>
+              }
+            </select>
+            <app-validation-message [receivedField]="itemForm.categoryId" />
+          </mat-form-field>
+        </div>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Description (optional)</mat-label>
+          <textarea matInput rows="3" [formField]="itemForm.description" placeholder="Brand, size, anything useful at the counter"></textarea>
+          <app-validation-message [receivedField]="itemForm.description" />
+        </mat-form-field>
+
+        <app-image-picker label="Item image (optional)" [(file)]="image" />
+
+        <button class="submit-button" type="submit" [disabled]="submitting() || noCategories()">
+          <span>{{ submitting() ? 'Adding item…' : 'Add item' }}</span>
+          <span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+      </form>
+    </section>
+
+    <!-- ================= LIST ================= -->
+    <section class="panel">
+      <div class="panel-heading">
+        <div><span class="panel-kicker">YOUR CATALOG</span><h2>Existing items</h2><p>Everything currently available for billing.</p></div>
+        <span class="count-pill">{{ items().length }} total</span>
+      </div>
+
+      @if (listLoading()) {
+        <div class="empty-compact"><span class="loader"></span><p>Loading items…</p></div>
+      } @else if (listError()) {
+        <div class="notice error" role="alert"><span class="notice-icon">!</span>{{ listError() }}</div>
+      } @else if (items().length) {
+        <div class="list">
+          @for (item of items(); track item.itemId) {
+            <div class="list-row">
+              <span class="thumb">
+                {{ item.name.charAt(0).toUpperCase() }}
+                <img [src]="imageSrc(item.imgUrl)" [alt]="item.name" (error)="hideBrokenImage($event)" />
+              </span>
+              <span class="row-copy"><strong>{{ item.name }}</strong><small>{{ item.description || 'No description' }}</small></span>
+              <span class="row-meta">
+                <span class="pill">{{ item.categoryName }}</span>
+                <span class="price">{{ currency(item.price) }}</span>
+                <button type="button" class="delete-button" [disabled]="deletingId() === item.itemId" (click)="remove(item)">{{ deletingId() === item.itemId ? 'Deleting…' : 'Delete' }}</button>
+              </span>
+            </div>
+          }
+        </div>
+      } @else {
+        <div class="empty-compact"><span>▤</span><p>No items yet. Your first one will appear here.</p></div>
+      }
+    </section>
+  </div>
+
+  <footer class="page-footer"><span>© Bilionn · Built for the people behind the counter.</span><span>Everything in its right place <b>✳</b></span></footer>
+</app-catalog-shell>

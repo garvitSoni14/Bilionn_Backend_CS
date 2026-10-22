@@ -1,0 +1,65 @@
+<h3 class="section-title">Address</h3>
+
+    <div class="field-grid">
+      <mat-form-field appearance="outline">
+        <mat-label>House no. (optional)</mat-label>
+        <input matInput type="text" [formField]="form().houseNo" />
+        <!-- @if (form().houseNo().invalid() && form().houseNo().touched()) {
+          <mat-error>{{ form().houseNo().errors()[0].message }}</mat-error>
+        } -->
+              <app-validation-message [receivedField]="form().houseNo"> </app-validation-message>
+
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Area (optional)</mat-label>
+        <input matInput type="text" [formField]="form().area" />
+        <!-- @if (form().area().invalid() && form().area().touched()) {
+          <mat-error>{{ form().area().errors()[0].message }}</mat-error>
+        } -->
+              <app-validation-message [receivedField]="form().area"> </app-validation-message>
+
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Street</mat-label>
+      <input matInput type="text" [formField]="form().street" autocomplete="address-line1" />
+      <!-- @if (form().street().invalid() && form().street().touched()) {
+        <mat-error>{{ form().street().errors()[0].message }}</mat-error>
+      } -->
+            <app-validation-message [receivedField]="form().street"> </app-validation-message>
+
+    </mat-form-field>
+
+    <div class="field-grid">
+      <mat-form-field appearance="outline">
+        <mat-label>City</mat-label>
+        <input matInput type="text" [formField]="form().city" autocomplete="address-level2" />
+        <!-- @if (form().city().invalid() && form().city().touched()) {
+          <mat-error>{{ form().city().errors()[0].message }}</mat-error>
+        } -->
+              <app-validation-message [receivedField]="form().city"> </app-validation-message>
+
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>State</mat-label>
+        <input matInput type="text" [formField]="form().state" autocomplete="address-level1" />
+        <!-- @if (form().state().invalid() && form().state().touched()) {
+          <mat-error>{{ form().state().errors()[0].message }}</mat-error>
+        } -->
+              <app-validation-message [receivedField]="form().state"> </app-validation-message>
+
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Pincode</mat-label>
+        <input matInput type="text" inputmode="numeric" [formField]="form().pincode" autocomplete="postal-code" />
+        <!-- @if (form().pincode().invalid() && form().pincode().touched()) {
+          <mat-error>{{ form().pincode().errors()[0].message }}</mat-error>
+        } -->
+              <app-validation-message [receivedField]="form().pincode"> </app-validation-message>
+
+      </mat-form-field>
+    </div>

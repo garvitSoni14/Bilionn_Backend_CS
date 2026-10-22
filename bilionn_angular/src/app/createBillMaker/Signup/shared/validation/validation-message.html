@@ -1,0 +1,15 @@
+<!-- @if (isTouchedAndInvalid()) {
+    @for (error of errors(); track error.kind) {
+        <div class="validation-message">
+            {{ error.message }}
+        </div>
+    }
+} -->
+
+@if (isTouchedAndInvalid()) {
+    @for (error of errors(); track error.kind) {
+        <mat-error class="validation-message">
+            {{ error.message }}
+        </mat-error>
+    }
+}
