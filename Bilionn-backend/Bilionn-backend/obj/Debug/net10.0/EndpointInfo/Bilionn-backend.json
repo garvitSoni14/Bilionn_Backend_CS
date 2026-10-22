@@ -1,17 +1,9 @@
 {
-  "openapi": "3.1.1",
+  "openapi": "3.0.4",
   "info": {
-    "title": "Bilionn-backend | v1",
-    "version": "1.0.0"
+    "title": "Bilionn-backend",
+    "version": "1.0"
   },
-  "servers": [
-    {
-      "url": "https://localhost:7106"
-    },
-    {
-      "url": "http://localhost:5109"
-    }
-  ],
   "paths": {
     "/api/admin/users": {
       "get": {
@@ -82,8 +74,7 @@
                 "$ref": "#/components/schemas/BootstrapAdminRequest"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "201": {
@@ -131,8 +122,7 @@
                 "$ref": "#/components/schemas/LoginRequest"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -221,8 +211,7 @@
                 "$ref": "#/components/schemas/CreateCashierRequest"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -336,8 +325,7 @@
                 "$ref": "#/components/schemas/UpdateCashierRequest"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -370,120 +358,101 @@
   "components": {
     "schemas": {
       "AccountStatus": {
-        "type": "integer"
+        "enum": [
+          "ACTIVE",
+          "LOCKED",
+          "DISABLED"
+        ],
+        "type": "string"
       },
       "AddressDto": {
-        "required": [
-          "houseNo",
-          "street",
-          "area",
-          "city",
-          "state",
-          "pincode"
-        ],
         "type": "object",
         "properties": {
           "houseNo": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "street": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "area": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "city": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "state": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "pincode": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "BankDetailsDto": {
-        "required": [
-          "accountHolderName",
-          "accountNumber",
-          "ifscCode",
-          "bankName"
-        ],
         "type": "object",
         "properties": {
           "accountHolderName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "accountNumber": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "ifscCode": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "bankName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "BootstrapAdminRequest": {
-        "required": [
-          "name",
-          "email",
-          "password"
-        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "password": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "CreateCashierRequest": {
-        "required": [
-          "employeeCode",
-          "fullName",
-          "dateOfBirth",
-          "mobileNumber",
-          "address",
-          "joiningDate",
-          "salary",
-          "panNumber",
-          "aadhaarNumber",
-          "bankDetails",
-          "emergencyContact",
-          "email",
-          "password"
-        ],
         "type": "object",
         "properties": {
           "employeeCode": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "fullName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "dateOfBirth": {
             "type": "string",
             "format": "date"
           },
           "mobileNumber": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "address": {
             "$ref": "#/components/schemas/AddressDto"
@@ -493,24 +462,16 @@
             "format": "date"
           },
           "salary": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
+            "type": "number",
             "format": "double"
           },
           "panNumber": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "aadhaarNumber": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "bankDetails": {
             "$ref": "#/components/schemas/BankDetailsDto"
@@ -519,141 +480,97 @@
             "$ref": "#/components/schemas/EmergencyContactDto"
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "password": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "EmergencyContactDto": {
-        "required": [
-          "name",
-          "mobileNumber",
-          "relationship"
-        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "mobileNumber": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "relationship": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "EmployeeResponse": {
-        "required": [
-          "id",
-          "employeeCode",
-          "fullName",
-          "dateOfBirth",
-          "mobileNumber",
-          "address",
-          "joiningDate",
-          "salary",
-          "panNumber",
-          "aadhaarNumber",
-          "bankDetails",
-          "emergencyContact",
-          "email",
-          "role",
-          "accountStatus",
-          "userId",
-          "createdAt",
-          "updatedAt"
-        ],
         "type": "object",
         "properties": {
           "id": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int64"
           },
           "employeeCode": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "fullName": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "dateOfBirth": {
             "type": "string",
             "format": "date"
           },
           "mobileNumber": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "address": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/AddressDto"
-              }
-            ]
+            "$ref": "#/components/schemas/AddressDto"
           },
           "joiningDate": {
             "type": "string",
             "format": "date"
           },
           "salary": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
+            "type": "number",
             "format": "double"
           },
           "panNumber": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "aadhaarNumber": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "bankDetails": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/BankDetailsDto"
-              }
-            ]
+            "$ref": "#/components/schemas/BankDetailsDto"
           },
           "emergencyContact": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/EmergencyContactDto"
-              }
-            ]
+            "$ref": "#/components/schemas/EmergencyContactDto"
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "role": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "accountStatus": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "userId": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "createdAt": {
             "type": "string",
@@ -663,161 +580,98 @@
             "type": "string",
             "format": "date-time"
           }
-        }
+        },
+        "additionalProperties": false
       },
       "LoginRequest": {
-        "required": [
-          "email",
-          "password"
-        ],
         "type": "object",
         "properties": {
           "email": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "password": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "UpdateCashierRequest": {
-        "required": [
-          "fullName",
-          "dateOfBirth",
-          "mobileNumber",
-          "address",
-          "joiningDate",
-          "salary",
-          "panNumber",
-          "aadhaarNumber",
-          "bankDetails",
-          "emergencyContact",
-          "email",
-          "accountStatus"
-        ],
         "type": "object",
         "properties": {
           "fullName": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "dateOfBirth": {
-            "type": [
-              "null",
-              "string"
-            ],
-            "format": "date"
+            "type": "string",
+            "format": "date",
+            "nullable": true
           },
           "mobileNumber": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "address": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/AddressDto"
-              }
-            ]
+            "$ref": "#/components/schemas/AddressDto"
           },
           "joiningDate": {
-            "type": [
-              "null",
-              "string"
-            ],
-            "format": "date"
+            "type": "string",
+            "format": "date",
+            "nullable": true
           },
           "salary": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "null",
-              "number",
-              "string"
-            ],
-            "format": "double"
+            "type": "number",
+            "format": "double",
+            "nullable": true
           },
           "panNumber": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "aadhaarNumber": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "bankDetails": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/BankDetailsDto"
-              }
-            ]
+            "$ref": "#/components/schemas/BankDetailsDto"
           },
           "emergencyContact": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/EmergencyContactDto"
-              }
-            ]
+            "$ref": "#/components/schemas/EmergencyContactDto"
           },
           "email": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "accountStatus": {
-            "oneOf": [
-              {
-                "type": "null"
-              },
-              {
-                "$ref": "#/components/schemas/AccountStatus"
-              }
-            ]
+            "$ref": "#/components/schemas/AccountStatus"
           }
-        }
+        },
+        "additionalProperties": false
       },
       "UserResponse": {
-        "required": [
-          "userId",
-          "name",
-          "email",
-          "role",
-          "accountStatus",
-          "createdAt",
-          "updatedAt"
-        ],
         "type": "object",
         "properties": {
           "userId": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "name": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "role": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "accountStatus": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "createdAt": {
             "type": "string",
@@ -827,7 +681,8 @@
             "type": "string",
             "format": "date-time"
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   },

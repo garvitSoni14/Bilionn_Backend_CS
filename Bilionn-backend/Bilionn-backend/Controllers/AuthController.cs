@@ -6,6 +6,8 @@ using Bilionn_backend.Auth;
 using Bilionn_backend.DTOs.Auth;
 using Bilionn_backend.Services;
 using FluentValidation;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -20,7 +22,7 @@ public class AuthController : ControllerBase
     private readonly IValidator<BootstrapAdminRequest> bootstrapAdminRequest;
     private readonly IValidator<LoginRequest> loginValidator;
 
-    public AuthController(IAuthService auth, IValidator<BootstrapAdminRequest> adminRequest, IValidator<LoginRequest> loginVal,SignInManager    )
+    public AuthController(IAuthService auth, IValidator<BootstrapAdminRequest> adminRequest, IValidator<LoginRequest> loginVal    )
     {
         authService = auth;
         bootstrapAdminRequest = adminRequest;
@@ -61,19 +63,35 @@ public class AuthController : ControllerBase
             new(ClaimTypes.Role,           user.Role)
         };
 
-        // 2. claims -> raw text:  userId=...|name=...|email=...|role=...
-        var value = string.Join("|",
-            $"userId={Clean(user.UserId)}",
-            $"name={Clean(user.Name)}",
-            $"email={Clean(user.Email)}",
-            $"role={Clean(user.Role)}");
+        //// 2. claims -> raw text:  userId=...|name=...|email=...|role=...
+        //var value = string.Join("|",
+        //    $"userId={Clean(user.UserId)}",
+        //    $"name={Clean(user.Name)}",
+        //    $"email={Clean(user.Email)}",
+        //    $"role={Clean(user.Role)}");
 
-        // 3. write the Set-Cookie header ourselves (Response.Cookies.Append would URL-encode it)
-        var cookie = $"{PlainCookieAuthHandler.CookieName}={value}; Path=/; SameSite=Lax" +
-                     $"; Expires={DateTimeOffset.UtcNow.AddMinutes(60):R}" +
-                     (Request.IsHttps ? "; Secure" : "");
-        Response.Headers.Append("Set-Cookie", cookie);
+        //// 3. write the Set-Cookie header ourselves (Response.Cookies.Append would URL-encode it)
+        //var cookie = $"{PlainCookieAuthHandler.CookieName}={value}; Path=/; SameSite=Lax" +
+        //             $"; Expires={DateTimeOffset.UtcNow.AddMinutes(60):R}" +
+        //             (Request.IsHttps ? "; Secure" : "");
+        //Response.Headers.Append("Set-Cookie", cookie);
 
+        // 2. ClaimsIdentity banayein
+        var claimsIdentity = new ClaimsIdentity(
+            claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+        // 3. Cookie ki properties (jaise expiry) set karein
+        var authProperties = new AuthenticationProperties
+        {
+            IsPersistent = true, // Browser close hone ke baad bhi cookie rahegi (agar zaroori ho)
+            ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(60)
+        };
+
+        // 4. .NET ka built-in SignInAsync call karein (Yeh automatic encrypted cookie browser ko bhej dega)
+        await HttpContext.SignInAsync(
+            CookieAuthenticationDefaults.AuthenticationScheme,
+            new ClaimsPrincipal(claimsIdentity),
+            authProperties);
         //var json = JsonSerializer.Serialize(new
         //{
         //    userId = user.UserId,
@@ -83,7 +101,7 @@ public class AuthController : ControllerBase
         //});
 
         // ASP.NET URL-encodes the value for us; don't escape it yourself
-        
+
         //Response.Cookies.Append(PlainCookieAuthHandler.CookieName, json, new CookieOptions
         //{
         //    HttpOnly = false,                 // readable in the browser
@@ -96,15 +114,19 @@ public class AuthController : ControllerBase
         return Ok(user);
     }
 
-    // keeps characters that would break a cookie (or our | separator) out of the value
-    private static string Clean(string? s) =>
-        (s ?? "").Replace("|", " ").Replace(";", " ").Replace(",", " ").Trim();
+    //// keeps characters that would break a cookie (or our | separator) out of the value
+    //private static string Clean(string? s) =>
+    //    (s ?? "").Replace("|", " ").Replace(";", " ").Replace(",", " ").Trim();
 
     [Authorize]
     [HttpPost("logout")]
-    public IActionResult Logout()
+    public async Task<IActionResult> Logout()
     {
-        Response.Cookies.Delete(PlainCookieAuthHandler.CookieName);
+        //Response.Cookies.Delete(PlainCookieAuthHandler.CookieName);
+        //return NoContent();
+
+        // .NET's own cookie sign-out helper
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         return NoContent();
     }
 

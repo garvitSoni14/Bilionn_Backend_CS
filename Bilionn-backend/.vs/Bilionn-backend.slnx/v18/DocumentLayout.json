@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\auth\\plaincookieauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\auth\\plaincookieauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -205,19 +205,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Program.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Program.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Program.cs",
-              "RelativeToolTip": "Bilionn-backend\\Program.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAADIAAAAcAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Program.cs*",
+              "RelativeToolTip": "Bilionn-backend\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-22T08:42:23.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AuthController.cs*",
+              "RelativeToolTip": "Bilionn-backend\\Controllers\\AuthController.cs*",
+              "ViewState": "AgIAAG8AAAAAfoaIZJAswHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T05:30:28.416Z",
               "EditorCaption": ""
             },
             {
@@ -248,19 +261,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Bilionn-backend\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAACQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T05:30:28.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "CashierValidators.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Validators\\CashierValidators.cs",
@@ -274,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AuthValidators.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Validators\\AuthValidators.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Validators\\AuthValidators.cs",
@@ -287,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlainCookieAuthHandler.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Auth\\PlainCookieAuthHandler.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Auth\\PlainCookieAuthHandler.cs",

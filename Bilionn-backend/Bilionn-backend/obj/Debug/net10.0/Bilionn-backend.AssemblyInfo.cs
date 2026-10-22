@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bilionn-backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e46f8f2103aa55e75a2278f34104bcb37289403")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+109429c255209302ce097bd4213477a2191e6d57")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bilionn-backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bilionn-backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

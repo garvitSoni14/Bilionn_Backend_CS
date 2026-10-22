@@ -103,6 +103,10 @@
             "Scalar.AspNetCore": {
               "target": "Package",
               "version": "[2.18.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[10.3.1, )"
             }
           },
           "imports": [

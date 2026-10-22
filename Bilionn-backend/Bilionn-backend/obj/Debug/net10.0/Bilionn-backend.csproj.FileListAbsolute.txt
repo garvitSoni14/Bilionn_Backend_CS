@@ -268,3 +268,6 @@ C:\Users\LAPTOP WORLD\Desktop\Bilion_CS\Bilionn-backend\Bilionn-backend\obj\Debu
 C:\Users\LAPTOP WORLD\Desktop\Bilion_CS\Bilionn-backend\Bilionn-backend\obj\Debug\net10.0\Bilionn-backend.genruntimeconfig.cache
 C:\Users\LAPTOP WORLD\Desktop\Bilion_CS\Bilionn-backend\Bilionn-backend\obj\Debug\net10.0\ref\Bilionn-backend.dll
 C:\Users\LAPTOP WORLD\Desktop\Bilion_CS\Bilionn-backend\Bilionn-backend\bin\Debug\net10.0\Scalar.AspNetCore.dll
+C:\Users\LAPTOP WORLD\Desktop\Bilion_CS\Bilionn-backend\Bilionn-backend\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\LAPTOP WORLD\Desktop\Bilion_CS\Bilionn-backend\Bilionn-backend\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\LAPTOP WORLD\Desktop\Bilion_CS\Bilionn-backend\Bilionn-backend\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
