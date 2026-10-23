@@ -26,13 +26,7 @@ public class AppDbContext : DbContext
             e.Property(x => x.AccountStatus).HasConversion<string>().HasMaxLength(20);
         });
 
-        modelBuilder.Entity<Category>(e =>
-        {
-            e.ToTable("tbl_category");
-            e.HasIndex(x => x.CategoryId).IsUnique();
-            e.HasIndex(x => x.Name).IsUnique();
-            e.Property(x => x.Image).HasColumnType("longblob");
-        });
+        
         modelBuilder.Entity<Category>(e =>
         {
             e.ToTable("tbl_category");

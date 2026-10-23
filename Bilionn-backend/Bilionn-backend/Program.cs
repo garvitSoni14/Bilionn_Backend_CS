@@ -8,7 +8,6 @@ using FluentValidation;
 //using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using Scalar.AspNetCore;
 //using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,7 +20,8 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<ICashierService, CashierService>();
-
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IItemService, ItemService>();
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
@@ -40,14 +40,21 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.Cookie.HttpOnly = true;
         options.Cookie.SameSite = SameSiteMode.Lax;
         options.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(60); // 60 minutes expiry
-
-        // Custom handling for API: if user unauthenticated, 401 bhej do (redirect mat karo)
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(30); // 60 minutes expiry
+        options.SlidingExpiration = true; // enabling the sliding expiration so that if the user is actively using the website he dont need to signin again and again..
+        // Custom handling for API: if user unauthenticated, 401 (no redirect )
         options.Events.OnRedirectToLogin = context =>
         {
             context.Response.StatusCode = StatusCodes.Status401Unauthorized;
             return Task.CompletedTask;
         };
+        // logged in but wrong role -> 403 (no redirect)
+        options.Events.OnRedirectToAccessDenied = context =>
+        {
+            context.Response.StatusCode = StatusCodes.Status403Forbidden;
+            return Task.CompletedTask;
+        };
+
     });
 
 // CORS so Angular can send the cookie
@@ -74,9 +81,9 @@ app.UseExceptionHandler();
 
 app.UseSwagger();
 app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Bilionn API v1");
-});
+{ c.SwaggerEndpoint("/swagger/v1/swagger.json", "Bilionn API v1"); });
+
+//copypaste-http://localhost:5109/swagger/index.html
 
 
 
@@ -84,9 +91,10 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseHttpsRedirection();
 }
-
+//Middle wares to intercept the request and perform authentication and authorization..
 app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
 
 app.Run();

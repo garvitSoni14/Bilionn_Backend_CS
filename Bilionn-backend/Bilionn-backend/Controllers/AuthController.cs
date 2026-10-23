@@ -1,15 +1,13 @@
-﻿
-
-using System.Security.Claims;
-using System.Text.Json;
-using Bilionn_backend.Auth;
+﻿using System.Security.Claims;
+//using System.Text.Json;
+//using Bilionn_backend.Auth;
 using Bilionn_backend.DTOs.Auth;
 using Bilionn_backend.Services;
 using FluentValidation;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
+//using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bilionn_backend.Controllers;
@@ -80,18 +78,20 @@ public class AuthController : ControllerBase
         var claimsIdentity = new ClaimsIdentity(
             claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-        // 3. Cookie ki properties (jaise expiry) set karein
+        // 3. Cookie properties (e.g-  expiry) set 
         var authProperties = new AuthenticationProperties
         {
-            IsPersistent = true, // Browser close hone ke baad bhi cookie rahegi (agar zaroori ho)
-            ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(60)
+            IsPersistent = true, // Cookie will sustain even after browser get closed
+            //ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(60)  commented out because it will prevent the slidingexpiration to work...
         };
 
-        // 4. .NET ka built-in SignInAsync call karein (Yeh automatic encrypted cookie browser ko bhej dega)
+        // 4. .NET's built-in SignInAsync called (....Yeh automatic encrypted cookie browser ko bhej dega)
         await HttpContext.SignInAsync(
             CookieAuthenticationDefaults.AuthenticationScheme,
             new ClaimsPrincipal(claimsIdentity),
             authProperties);
+        
+        
         //var json = JsonSerializer.Serialize(new
         //{
         //    userId = user.UserId,
@@ -100,7 +100,6 @@ public class AuthController : ControllerBase
         //    role = user.Role
         //});
 
-        // ASP.NET URL-encodes the value for us; don't escape it yourself
 
         //Response.Cookies.Append(PlainCookieAuthHandler.CookieName, json, new CookieOptions
         //{

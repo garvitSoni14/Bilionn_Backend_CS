@@ -3,40 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\validators\\authvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\validators\\authvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\auth\\plaincookieauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\auth\\plaincookieauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\services\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\services\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\dtos\\catalog\\catalogdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\dtos\\catalog\\catalogdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\models\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\models\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\controllers\\cashiercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\controllers\\cashiercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\auth\\plaincookieauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\auth\\plaincookieauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\validators\\authvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\validators\\authvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\validators\\cashiervalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\validators\\cashiervalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\validators\\validatorextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\validators\\validatorextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\controllers\\cashiercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\controllers\\cashiercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\models\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +123,6 @@
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\models\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\models\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\models\\accountstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\mappings\\employeemappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\mappings\\employeemappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -97,14 +133,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\dtos\\auth\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\dtos\\auth\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -125,14 +153,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -159,10 +179,6 @@
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\models\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\models\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\models\\iauditable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\models\\iauditable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -173,14 +189,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\migrations\\20261015211417_addaddressandpaymentdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\migrations\\20261015211417_addaddressandpaymentdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\exceptions\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|c:\\users\\laptop world\\desktop\\bilion_cs\\bilionn-backend\\bilionn-backend\\exceptions\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E42242E6-2430-579A-82F3-8A4A3E8FDEB8}|Bilionn-backend\\Bilionn-backend.csproj|solutionrelative:bilionn-backend\\exceptions\\globalexceptionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LAPTOP WORLD\\Desktop\\Bilionn-backend\\Bilionn-backend\\Migrations\\20261015114321_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -205,76 +213,201 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Program.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Program.cs",
               "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Program.cs",
               "RelativeToolTip": "Bilionn-backend\\Program.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAADIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-22T08:42:23.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\AuthService.cs",
-              "RelativeToolTip": "Bilionn-backend\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T05:15:17.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\UserService.cs",
-              "RelativeToolTip": "Bilionn-backend\\Services\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T09:27:47.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Bilionn-backend\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAACQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T05:30:28.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CashierValidators.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Validators\\CashierValidators.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Validators\\CashierValidators.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Validators\\CashierValidators.cs",
-              "RelativeToolTip": "Bilionn-backend\\Validators\\CashierValidators.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwFkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T10:02:17.739Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Controllers\\ItemController.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "Bilionn-backend\\Controllers\\ItemController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T11:24:13.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Bilionn-backend\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T09:56:43.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Bilionn-backend\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T05:01:39.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CatalogDtos.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\DTOs\\Catalog\\CatalogDtos.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\DTOs\\Catalog\\CatalogDtos.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\DTOs\\Catalog\\CatalogDtos.cs",
+              "RelativeToolTip": "Bilionn-backend\\DTOs\\Catalog\\CatalogDtos.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T09:31:07.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\CategoryService.cs",
+              "RelativeToolTip": "Bilionn-backend\\Services\\CategoryService.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDUAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T09:45:38.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\ItemService.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Services\\ItemService.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\ItemService.cs",
+              "RelativeToolTip": "Bilionn-backend\\Services\\ItemService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwCsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T11:25:31.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IItemService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\IItemService.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Services\\IItemService.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\IItemService.cs",
+              "RelativeToolTip": "Bilionn-backend\\Services\\IItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T09:45:01.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Items.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\Items.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Models\\Items.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\Items.cs",
+              "RelativeToolTip": "Bilionn-backend\\Models\\Items.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T12:04:43.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CashierController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\CashierController.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Controllers\\CashierController.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\CashierController.cs",
+              "RelativeToolTip": "Bilionn-backend\\Controllers\\CashierController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwCIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T10:10:22.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\AuthService.cs",
+              "RelativeToolTip": "Bilionn-backend\\Services\\AuthService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAApwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T05:15:17.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppException.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Exceptions\\AppException.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Exceptions\\AppException.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Exceptions\\AppException.cs",
+              "RelativeToolTip": "Bilionn-backend\\Exceptions\\AppException.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA2wBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T05:53:14.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Bilionn-backend\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T09:32:35.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Bilionn-backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwFQAAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T05:30:28.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PlainCookieAuthHandler.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Auth\\PlainCookieAuthHandler.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Auth\\PlainCookieAuthHandler.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Auth\\PlainCookieAuthHandler.cs",
+              "RelativeToolTip": "Bilionn-backend\\Auth\\PlainCookieAuthHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T12:19:36.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AuthValidators.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Validators\\AuthValidators.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Validators\\AuthValidators.cs",
@@ -282,51 +415,47 @@
               "RelativeToolTip": "Bilionn-backend\\Validators\\AuthValidators.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T04:39:35.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T04:39:35.896Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlainCookieAuthHandler.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Auth\\PlainCookieAuthHandler.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Auth\\PlainCookieAuthHandler.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Auth\\PlainCookieAuthHandler.cs",
-              "RelativeToolTip": "Bilionn-backend\\Auth\\PlainCookieAuthHandler.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowBsAAABPAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "CashierValidators.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Validators\\CashierValidators.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Validators\\CashierValidators.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Validators\\CashierValidators.cs",
+              "RelativeToolTip": "Bilionn-backend\\Validators\\CashierValidators.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwFkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T12:19:36.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T10:02:17.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ValidatorExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Validators\\ValidatorExtensions.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Validators\\ValidatorExtensions.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Validators\\ValidatorExtensions.cs",
-              "RelativeToolTip": "Bilionn-backend\\Validators\\ValidatorExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Bilionn-backend\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\UserService.cs",
+              "RelativeToolTip": "Bilionn-backend\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T10:01:51.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T09:27:47.55Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CashierController.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\CashierController.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Controllers\\CashierController.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\CashierController.cs",
-              "RelativeToolTip": "Bilionn-backend\\Controllers\\CashierController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAuwCAAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T10:10:22.993Z",
-              "EditorCaption": ""
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\appsettings.json",
+              "RelativeDocumentMoniker": "Bilionn-backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\appsettings.json",
+              "RelativeToolTip": "Bilionn-backend\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-15T10:32:56.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "PaymentMethod.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\PaymentMethod.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\PaymentMethod.cs",
@@ -334,12 +463,11 @@
               "RelativeToolTip": "Bilionn-backend\\Models\\PaymentMethod.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T12:15:23.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T12:15:23.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "CashierService.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\CashierService.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Services\\CashierService.cs",
@@ -347,12 +475,11 @@
               "RelativeToolTip": "Bilionn-backend\\Services\\CashierService.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAAAiwIsAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T10:09:09.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T10:09:09.461Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Repositories\\EmployeeRepository.cs",
@@ -360,12 +487,11 @@
               "RelativeToolTip": "Bilionn-backend\\Repositories\\EmployeeRepository.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAmwCQAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T10:06:38.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T10:06:38.226Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Repositories\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Repositories\\IEmployeeRepository.cs",
@@ -373,12 +499,11 @@
               "RelativeToolTip": "Bilionn-backend\\Repositories\\IEmployeeRepository.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAwwAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T10:06:01.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T10:06:01.294Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 23,
               "Title": "ICashierService.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\ICashierService.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Services\\ICashierService.cs",
@@ -386,12 +511,11 @@
               "RelativeToolTip": "Bilionn-backend\\Services\\ICashierService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T10:08:18.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T10:08:18.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\IAuthService.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Services\\IAuthService.cs",
@@ -399,12 +523,11 @@
               "RelativeToolTip": "Bilionn-backend\\Services\\IAuthService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T05:14:01.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T05:14:01.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Repositories\\UserRepository.cs",
@@ -412,12 +535,11 @@
               "RelativeToolTip": "Bilionn-backend\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAA5wBgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T05:03:07.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T05:03:07.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 26,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\Category.cs",
@@ -425,12 +547,11 @@
               "RelativeToolTip": "Bilionn-backend\\Models\\Category.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAQwAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T12:04:12.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T12:04:12.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "BankDetails.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\BankDetails.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\BankDetails.cs",
@@ -438,12 +559,11 @@
               "RelativeToolTip": "Bilionn-backend\\Models\\BankDetails.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T12:01:42.713Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T12:01:42.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "AppRoles.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\AppRoles.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\AppRoles.cs",
@@ -451,12 +571,11 @@
               "RelativeToolTip": "Bilionn-backend\\Models\\AppRoles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T10:29:07.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T10:29:07.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 29,
               "Title": "Address.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\Address.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\Address.cs",
@@ -464,25 +583,11 @@
               "RelativeToolTip": "Bilionn-backend\\Models\\Address.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T21:03:20.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-15T21:03:20.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AccountStatus.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\AccountStatus.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Models\\AccountStatus.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\AccountStatus.cs",
-              "RelativeToolTip": "Bilionn-backend\\Models\\AccountStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T12:00:56.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "EmployeeMappings.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Mappings\\EmployeeMappings.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Mappings\\EmployeeMappings.cs",
@@ -490,12 +595,11 @@
               "RelativeToolTip": "Bilionn-backend\\Mappings\\EmployeeMappings.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T10:20:19.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T10:20:19.591Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 31,
               "Title": "CashierDtos.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\DTOs\\Cashiers\\CashierDtos.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\DTOs\\Cashiers\\CashierDtos.cs",
@@ -503,12 +607,11 @@
               "RelativeToolTip": "Bilionn-backend\\DTOs\\Cashiers\\CashierDtos.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAgwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T09:59:42.343Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T09:59:42.343Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 32,
               "Title": "AuthDto.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\DTOs\\Auth\\AuthDto.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\DTOs\\Auth\\AuthDto.cs",
@@ -516,38 +619,11 @@
               "RelativeToolTip": "Bilionn-backend\\DTOs\\Auth\\AuthDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T03:34:10.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T03:34:10.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Bilionn-backend\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAKQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T11:01:22.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Bilionn-backend\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAzwAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T09:32:35.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Bilionn-backend\\Properties\\launchSettings.json",
@@ -555,12 +631,11 @@
               "RelativeToolTip": "Bilionn-backend\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAQAAAAAAAAAAAAswAwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-16T07:24:54.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-16T07:24:54.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "UserMappings.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Mappings\\UserMappings.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Mappings\\UserMappings.cs",
@@ -572,7 +647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Bilionn-backend\\appsettings.Development.json",
@@ -584,7 +659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Services\\IUserService.cs",
@@ -596,7 +671,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\User.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\User.cs",
@@ -608,31 +683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\appsettings.json",
-              "RelativeDocumentMoniker": "Bilionn-backend\\appsettings.json",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\appsettings.json",
-              "RelativeToolTip": "Bilionn-backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-15T10:32:56.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "Bilionn-backend\\Repositories\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T05:01:39.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\Employee.cs",
@@ -644,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\Role.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\Role.cs",
@@ -656,7 +707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "PaymentDetails.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\PaymentDetails.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\PaymentDetails.cs",
@@ -668,7 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\OrderItem.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\OrderItem.cs",
@@ -680,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "PaymentStatus.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\PaymentStatus.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\PaymentStatus.cs",
@@ -692,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\Order.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\Order.cs",
@@ -704,19 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Items.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\Items.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Models\\Items.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\Items.cs",
-              "RelativeToolTip": "Bilionn-backend\\Models\\Items.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAQwAUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-15T12:04:43.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 44,
               "Title": "IAuditable.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\IAuditable.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\IAuditable.cs",
@@ -728,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 45,
               "Title": "EmergencyContact.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Models\\EmergencyContact.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Models\\EmergencyContact.cs",
@@ -740,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "20261015211417_AddAddressAndPaymentDetails.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Migrations\\20261015211417_AddAddressAndPaymentDetails.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Migrations\\20261015211417_AddAddressAndPaymentDetails.cs",
@@ -752,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "20261016090439_UseHashedPasswordColumn.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Migrations\\20261016090439_UseHashedPasswordColumn.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Migrations\\20261016090439_UseHashedPasswordColumn.cs",
@@ -764,31 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "AppException.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Exceptions\\AppException.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Exceptions\\AppException.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Exceptions\\AppException.cs",
-              "RelativeToolTip": "Bilionn-backend\\Exceptions\\AppException.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwA0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T05:53:14.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "GlobalExceptionHandler.cs",
-              "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Exceptions\\GlobalExceptionHandler.cs",
-              "RelativeDocumentMoniker": "Bilionn-backend\\Exceptions\\GlobalExceptionHandler.cs",
-              "ToolTip": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Exceptions\\GlobalExceptionHandler.cs",
-              "RelativeToolTip": "Bilionn-backend\\Exceptions\\GlobalExceptionHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T05:58:02.507Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "20261015115853_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Migrations\\20261015115853_InitialCreate.cs",
               "RelativeDocumentMoniker": "Bilionn-backend\\Migrations\\20261015115853_InitialCreate.cs",
@@ -800,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "20261015114321_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilionn-backend\\Bilionn-backend\\Migrations\\20261015114321_InitialCreate.cs",
               "RelativeDocumentMoniker": "..\\..\\Bilionn-backend\\Bilionn-backend\\Migrations\\20261015114321_InitialCreate.cs",
@@ -812,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "Bilionn-backend.csproj",
               "DocumentMoniker": "C:\\Users\\LAPTOP WORLD\\Desktop\\Bilion_CS\\Bilionn-backend\\Bilionn-backend\\Bilionn-backend.csproj",
               "RelativeDocumentMoniker": "Bilionn-backend\\Bilionn-backend.csproj",

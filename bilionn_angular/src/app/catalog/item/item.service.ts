@@ -6,8 +6,8 @@ import { ItemData, ItemResponse } from './item.model';
 @Injectable({ providedIn: 'root' })
 export class ItemService {
   private readonly http = inject(HttpClient);
-  private readonly host = 'http://localhost:7106';
-  private readonly apiUrl = `${this.host}/api/v1.0`;
+  private readonly host = 'http://localhost:5109';
+  private readonly apiUrl = `${this.host}/api`;
 
   list(): Observable<ItemResponse[]> {
     return this.http.get<ItemResponse[]>(`${this.apiUrl}/items`);
